@@ -61,7 +61,7 @@ public partial class ConfigEditor : System.Web.UI.Page
 				streamWriter.Write(txtEditor.Text.Trim());
 				streamWriter.Close();
 
-				lblInfo.Text = "配置文件保存成功";
+				Response.Write("<script>alert('配置文件保存成功');</script>");
 			}
 		}
 		catch (Exception exception)
